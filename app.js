@@ -6,6 +6,8 @@ const resultHTML = $(".result > p");
 const rockHTML = $("#r");
 const paperHTML = $("#p");
 const scissorsHTML = $("#s");
+const actionHTML = $("action");
+var lastListItem;
 
 var compChoice = null;
 
@@ -45,4 +47,29 @@ function PlayRound(userChoice) {
     else {
         resultHTML.html("Draw!");
     }
+    addHistory(parseInt(userChoice),compChoice);
+};
+
+//Adds descriptive result of last round played to history list
+function addHistory(userChoice, compChoice) {
+    var text = $("<li></li>").text("User plays " + numberToItem(userChoice) + ", Computer plays " + numberToItem(compChoice));
+
+    
+    $("ul").prepend(text).first().hide().fadeIn("slow");
+
+    
+};
+
+//Returns string corresponding to numerical choice
+function numberToItem(choice) {
+    switch (choice) {
+        case 0:
+            return "rock";
+            break;
+        case 1:
+            return "paper";
+            break;
+        case 2:
+            return "scissors";
+    };
 };

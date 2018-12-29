@@ -73,9 +73,22 @@ body {
     justify-content: center;
 }
 
-#action {
+.action {
     align-content: center;
     color: white;
     font-size:35px;
     text-align: center;
+}
+
+#history {
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+li {
+    list-style-type: circle;
+    margin-left: 30px;
+    font-size: smaller;
+
 }
