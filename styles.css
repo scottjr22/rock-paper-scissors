@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+header {
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.scoreboard {
+    position: relative;
+    max-width: 200px;
+    border: 2px solid white;
+    margin: 10px auto;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 15px 10px;
+}
+body {
+    background-color: mediumslateblue;
+}
+
+.badge {
+    background-color: rgb(233, 70, 52);
+    font-size: 20px;
+}
+
+#user {
+    position: absolute;
+    top: 30%;
+    left: -20px;
+
+}
+#computer {
+    position: absolute;
+    top: 30%;
+    right: -30px;
+}
+
+.result {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+.choice {
+    margin: 15px;
+    transition: all 1s;
+}
+
+.choice:hover {
+    cursor:pointer;
+    background: rgb(85, 59, 235);
+}
+
+.choice > img {
+    height: 120px;
+
+}
+.choices {
+    margin:  10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#action {
+    align-content: center;
+    color: white;
+    font-size:35px;
+    text-align: center;
+}
